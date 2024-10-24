@@ -16,8 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger('setting_id');
             $table->string('locale')->index();
             $table->string('title');
-            $table->text('content');
-            $table->text('address');     
+            $table->text('content')->nullable();
+            $table->text('address')->nullable();;     
             $table->unique(['setting_id', 'locale']);
             $table->foreign('setting_id')->references('id')->on('settings')->onDelete('cascade');
         });

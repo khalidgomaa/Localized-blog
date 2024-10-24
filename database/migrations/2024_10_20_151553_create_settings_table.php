@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string(column: 'logo')->nullable();
             $table->string(column: 'favicon')->nullable();
             $table->string(column: 'facebook')->nullable();
-            $table->string(column: 'instegram')->nullable();
+            $table->string(column: 'instagram')->nullable();
             $table->string(column: 'email')->nullable();
             $table->string(column: 'phone')->nullable();
 

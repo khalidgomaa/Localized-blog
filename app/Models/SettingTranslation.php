@@ -9,5 +9,5 @@ use Astrotomic\Translatable\Translatable;
 class SettingTranslation extends Model
 {
     public $timestamps = false;
-    protected $fillable = ['title', 'content','address'.'setting_id','local'];
+    protected $fillable = ['title', 'content','address','setting_id','local'];
 }
